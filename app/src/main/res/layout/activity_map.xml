@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        />
+
+    <FrameLayout
+        android:id="@+id/fram_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/btn_display_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Area"
+            android:onClick="showArea"/>
+
+        <Button
+            android:id="@+id/btn_draw_State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lock" />
+
+    </FrameLayout>
+
+</FrameLayout>
